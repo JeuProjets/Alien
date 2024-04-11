@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -466,7 +479,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      armor__0044_fire_10_0: -6823560521610309830
+      armor__0044_fire_10_1: -1833979806679685159
+      armor__0044_fire_10_10: -2372621979613121518
+      armor__0044_fire_10_11: -171261038296764540
+      armor__0044_fire_10_12: -6417115995814935592
+      armor__0044_fire_10_13: 1288356707888175593
+      armor__0044_fire_10_14: 2368762190755514688
+      armor__0044_fire_10_2: -7405585415631047413
+      armor__0044_fire_10_3: -2585886675561951408
+      armor__0044_fire_10_4: 1926485527942993168
+      armor__0044_fire_10_5: 3766238931601001681
+      armor__0044_fire_10_6: -3061785253652065455
+      armor__0044_fire_10_7: -9177383381863520596
+      armor__0044_fire_10_8: -8011165374711786350
+      armor__0044_fire_10_9: 5642177417585887871
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

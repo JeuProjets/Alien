@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -466,7 +479,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue__0044_fire_9_0: 868299823319196232
+      blue__0044_fire_9_1: -6479585162858599628
+      blue__0044_fire_9_10: 1132321387902384035
+      blue__0044_fire_9_11: -360156499951871870
+      blue__0044_fire_9_12: 4665947836712855220
+      blue__0044_fire_9_13: 943961367256828307
+      blue__0044_fire_9_14: 417661850948768293
+      blue__0044_fire_9_2: -7743410920061793897
+      blue__0044_fire_9_3: 228653937174549032
+      blue__0044_fire_9_4: -1866099702128538948
+      blue__0044_fire_9_5: 530859579542808828
+      blue__0044_fire_9_6: -7589430451165767419
+      blue__0044_fire_9_7: -6307236795027079417
+      blue__0044_fire_9_8: 7297427534974228512
+      blue__0044_fire_9_9: 5295540437380905925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

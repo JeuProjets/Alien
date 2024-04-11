@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -298,7 +311,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ship4_turbo_flight_001_0: 56383262791573717
+      Ship4_turbo_flight_001_1: -3361021162474776116
+      Ship4_turbo_flight_001_2: -1100900580494637225
+      Ship4_turbo_flight_001_3: 9017865886769998071
+      Ship4_turbo_flight_001_4: 8181032333992746106
+      Ship4_turbo_flight_001_5: -6320735621410104183
+      Ship4_turbo_flight_001_6: -575342934960914583
+      Ship4_turbo_flight_001_7: -6426796043196617740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

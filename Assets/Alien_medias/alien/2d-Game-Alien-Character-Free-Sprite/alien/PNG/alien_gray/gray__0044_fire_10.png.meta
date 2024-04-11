@@ -93,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,6 +127,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -466,7 +479,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gray__0044_fire_10_0: -6262093463736879610
+      gray__0044_fire_10_1: -850204113401848778
+      gray__0044_fire_10_10: 4549375598408157260
+      gray__0044_fire_10_11: 8465512283577808983
+      gray__0044_fire_10_12: -6420428541565935754
+      gray__0044_fire_10_13: 587916144136658084
+      gray__0044_fire_10_14: -8451312818574286417
+      gray__0044_fire_10_2: -3206898741346046863
+      gray__0044_fire_10_3: 1596854933118862257
+      gray__0044_fire_10_4: -6309445700769178880
+      gray__0044_fire_10_5: 4000025397917320456
+      gray__0044_fire_10_6: -8867030721549350902
+      gray__0044_fire_10_7: 3936355212684028709
+      gray__0044_fire_10_8: -7040195978436917945
+      gray__0044_fire_10_9: -1343455308699329151
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -466,7 +479,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      predatormask__0044_fire_10_0: 2191157203200727424
+      predatormask__0044_fire_10_1: -4109984141375602762
+      predatormask__0044_fire_10_10: -5811698687837500081
+      predatormask__0044_fire_10_11: 6509443890977077431
+      predatormask__0044_fire_10_12: 6904806676727383087
+      predatormask__0044_fire_10_13: -4048677297479621628
+      predatormask__0044_fire_10_14: -4316117653537160461
+      predatormask__0044_fire_10_2: 1432313398537892325
+      predatormask__0044_fire_10_3: -2246480448129459088
+      predatormask__0044_fire_10_4: 4133022801427679327
+      predatormask__0044_fire_10_5: 7618228617777586496
+      predatormask__0044_fire_10_6: -7734404020830554370
+      predatormask__0044_fire_10_7: -3722589427645534473
+      predatormask__0044_fire_10_8: -2547896469847089327
+      predatormask__0044_fire_10_9: -2216726417530761023
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

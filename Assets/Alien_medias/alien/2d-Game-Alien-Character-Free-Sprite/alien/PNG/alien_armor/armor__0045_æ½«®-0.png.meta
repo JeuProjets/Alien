@@ -135,6 +135,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -442,7 +455,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "armor__0045_\xE6\xBD\xAB\xAE-0_0": 6406306172922890978
+      "armor__0045_\xE6\xBD\xAB\xAE-0_1": -3969795027767295988
+      "armor__0045_\xE6\xBD\xAB\xAE-0_10": -3831521892131335383
+      "armor__0045_\xE6\xBD\xAB\xAE-0_11": 4881404811662817148
+      "armor__0045_\xE6\xBD\xAB\xAE-0_12": 5693747663483407118
+      "armor__0045_\xE6\xBD\xAB\xAE-0_13": 449749729948528093
+      "armor__0045_\xE6\xBD\xAB\xAE-0_2": 1491282303422503097
+      "armor__0045_\xE6\xBD\xAB\xAE-0_3": 47156729744091327
+      "armor__0045_\xE6\xBD\xAB\xAE-0_4": -6331642985579454984
+      "armor__0045_\xE6\xBD\xAB\xAE-0_5": -8842690558476212291
+      "armor__0045_\xE6\xBD\xAB\xAE-0_6": 4304010269844511145
+      "armor__0045_\xE6\xBD\xAB\xAE-0_7": -2781068318059101893
+      "armor__0045_\xE6\xBD\xAB\xAE-0_8": 3458298300715506903
+      "armor__0045_\xE6\xBD\xAB\xAE-0_9": -911385093846777429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

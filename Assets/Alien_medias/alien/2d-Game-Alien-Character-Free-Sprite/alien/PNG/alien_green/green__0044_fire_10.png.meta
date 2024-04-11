@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -466,7 +479,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      green__0044_fire_10_0: 3760176553659491264
+      green__0044_fire_10_1: 2949238209523317957
+      green__0044_fire_10_10: 1237297162453743270
+      green__0044_fire_10_11: -8733430141196486784
+      green__0044_fire_10_12: -2511553411983313273
+      green__0044_fire_10_13: 1004882905963626452
+      green__0044_fire_10_14: -3935422578022161072
+      green__0044_fire_10_2: -1425484188162714916
+      green__0044_fire_10_3: -3409018686425988055
+      green__0044_fire_10_4: -1445856940882011380
+      green__0044_fire_10_5: 6877978345172493155
+      green__0044_fire_10_6: -2959811791344878921
+      green__0044_fire_10_7: -8593606520166910240
+      green__0044_fire_10_8: 1622461190812522289
+      green__0044_fire_10_9: -4533637035402670875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

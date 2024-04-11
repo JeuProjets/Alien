@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -466,7 +479,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      darkgray__0044_fire_10_0: 2784893738840223108
+      darkgray__0044_fire_10_1: -1722722762764418097
+      darkgray__0044_fire_10_10: -2808976008050441763
+      darkgray__0044_fire_10_11: 5536968427478821651
+      darkgray__0044_fire_10_12: -1703289145122296705
+      darkgray__0044_fire_10_13: -1003537334420488213
+      darkgray__0044_fire_10_14: 8302871675109291457
+      darkgray__0044_fire_10_2: 8029350444383844443
+      darkgray__0044_fire_10_3: 2978507558244782041
+      darkgray__0044_fire_10_4: 7292967974412741344
+      darkgray__0044_fire_10_5: 2652969309619315619
+      darkgray__0044_fire_10_6: -412352815719200137
+      darkgray__0044_fire_10_7: 2803227439146018167
+      darkgray__0044_fire_10_8: -1718980500814087589
+      darkgray__0044_fire_10_9: 3775485386074047682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
