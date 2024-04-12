@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ad9f51a1673425d47956a1202cf65b5d
+guid: d03f79367eaedc14bb70094d7da5e74d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -471487380423568056
-    second: fondNuages_0
+      213: 4532579223243652490
+    second: interfaceIntro_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fondNuages_0
+      name: interfaceIntro_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 5760
+        width: 2125
+        height: 1620
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84516cdb9b0f479f0800000000000000
-      internalID: -471487380423568056
+      spriteID: a8df0c5f9c4f6ee30800000000000000
+      internalID: 4532579223243652490
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      fondNuages_0: -471487380423568056
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

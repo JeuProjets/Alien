@@ -11,6 +11,7 @@ public class DeplacementsAlien : MonoBehaviour
     public float vitesseSaut;
 
     public bool alienCollision;
+    bool pouvoirSaut = false;
 
     // Start is called before the first frame update
     void Start()
@@ -78,7 +79,7 @@ public class DeplacementsAlien : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collisionsMegaman)
+    void OnCollisionEnter2D(Collision2D collisionsAlien)
     {
         //Variable de collision est à vrai
         alienCollision = true;
@@ -88,6 +89,13 @@ public class DeplacementsAlien : MonoBehaviour
         {
             //On empêche l'option de sauter
             GetComponent<Animator>().SetBool("saut", false);
+        }
+
+        //Gems
+        if (collisionsAlien.gameObject.name == "bouleBleu")
+        {
+            pouvoirSaut = true;
+            
         }
     }
 }
