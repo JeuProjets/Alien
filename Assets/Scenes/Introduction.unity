@@ -146,14 +146,14 @@ RectTransform:
   m_GameObject: {fileID: 472164000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.4, y: 9.4, z: 9.4}
+  m_LocalScale: {x: 4.63, y: 4.63, z: 4.63}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1485380916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 259.06, y: 185.4}
+  m_AnchoredPosition: {x: 121.6, y: 144}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &472164002
@@ -185,14 +185,14 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294959071
+  m_fontColor: {r: 0.8726415, g: 0.87529474, b: 1, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 0.216981, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 0, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
@@ -282,14 +282,14 @@ RectTransform:
   m_GameObject: {fileID: 656381541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.42, y: 1.42, z: 1.42}
+  m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1485380916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168.35, y: 108.1}
+  m_AnchoredPosition: {x: -98, y: 64}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656381543
@@ -591,6 +591,7 @@ GameObject:
   - component: {fileID: 2036014716}
   - component: {fileID: 2036014715}
   - component: {fileID: 2036014714}
+  - component: {fileID: 2036014717}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -672,6 +673,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2036014717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036014713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bcd509db2a365349b83f05b85aff608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2062339304
 GameObject:
   m_ObjectHideFlags: 0

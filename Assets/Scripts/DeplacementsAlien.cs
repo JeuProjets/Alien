@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeplacementsAlien : MonoBehaviour
 {
@@ -11,26 +12,29 @@ public class DeplacementsAlien : MonoBehaviour
     public float vitesseSaut;
 
     public bool alienCollision;
-    bool pouvoirSaut = false;
+    //bool pouvoirSaut = false;
+
+    public AudioClip sonDiamants;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         //Déplacement vers la gauche
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             vitesseX = -vitesseXMax;
             GetComponent<SpriteRenderer>().flipX = true;
 
         }
         //Déplacement vers la droite
-        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             vitesseX = vitesseXMax;
             GetComponent<SpriteRenderer>().flipX = false;
@@ -45,7 +49,6 @@ public class DeplacementsAlien : MonoBehaviour
         // Saut
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && Physics2D.OverlapCircle(transform.position, 0.2f))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(vitesseX, vitesseY);
             vitesseY = vitesseSaut;
             GetComponent<Animator>().SetBool("saut", true);
             alienCollision = false;
@@ -53,13 +56,14 @@ public class DeplacementsAlien : MonoBehaviour
         else
         {
             vitesseY = GetComponent<Rigidbody2D>().velocity.y;  //vitesse actuelle verticale
+            GetComponent<Animator>().SetBool("saut", false);
         }
 
         //Applique les vitesses en X et Y
         GetComponent<Rigidbody2D>().velocity = new Vector2(vitesseX, vitesseY);
 
         //****Gestion des animaitons de course, de repos et de saut****
-        if (vitesseX > 0.5f || vitesseX < -0.5f)
+        if (vitesseX > 0.2f || vitesseX < -0.5f)
         {
             GetComponent<Animator>().SetBool("marche", true);
         }
@@ -93,9 +97,10 @@ public class DeplacementsAlien : MonoBehaviour
 
         //Gems
         if (collisionsAlien.gameObject.name == "bouleBleu")
-        {
-            pouvoirSaut = true;
-            
+        { 
+            //pouvoirSaut = true;
+            Destroy(collisionsAlien.gameObject);
+            GetComponent<AudioSource>().PlayOneShot(sonDiamants);
         }
     }
 }
