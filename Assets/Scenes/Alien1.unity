@@ -312,7 +312,7 @@ Transform:
   m_GameObject: {fileID: 232313291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.76, y: 4.18, z: 0.05003808}
+  m_LocalPosition: {x: -4.74, y: 3, z: 0.05003808}
   m_LocalScale: {x: 0.61, y: 0.61, z: 0.61}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -355,8 +355,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -7.6154566, y: 1.2965169}
-  - {x: 7.582093, y: 1.2885606}
+  - {x: -7.6534224, y: 1.3914294}
+  - {x: 7.601073, y: 1.573298}
   - {x: 6.367774, y: 0.30939102}
   - {x: 5.729792, y: 0.50170285}
   - {x: 4.033557, y: -0.17284739}
@@ -365,13 +365,14 @@ EdgeCollider2D:
   - {x: 0.103753954, y: -0.49036467}
   - {x: -1.2581999, y: -0.44796222}
   - {x: -1.9985567, y: -1.0570542}
+  - {x: -2.2403288, y: -0.8375673}
   - {x: -2.2403286, y: -0.83756757}
   - {x: -3.346896, y: -1.614989}
   - {x: -4.47886, y: -0.82402945}
   - {x: -4.876416, y: -0.94859636}
   - {x: -6.1320205, y: 0.23687331}
   - {x: -6.363998, y: 0.05730194}
-  - {x: -7.681313, y: 1.3103446}
+  - {x: -7.6243634, y: 1.4622037}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -1450,7 +1451,7 @@ Transform:
   m_GameObject: {fileID: 1660056450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.67, y: 2.92, z: 0.034458626}
+  m_LocalPosition: {x: -6.58, y: 1.65, z: 0.034458626}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
