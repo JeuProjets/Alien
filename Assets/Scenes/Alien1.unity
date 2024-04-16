@@ -231,12 +231,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178276680}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5161605, y: -0.9810221, z: -0.035675447}
   m_LocalScale: {x: 0.94, y: 0.94, z: 0.94}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 848873088}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &178276683
 EdgeCollider2D:
@@ -275,10 +275,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -9.473747, y: 0.018036984}
+  - {x: 9.628555, y: -0.5683284}
+  - {x: 9.5756035, y: 63.419735}
+  - {x: -9.636639, y: 63.485306}
   - {x: -9.473172, y: -5.306865}
-  - {x: 9.469404, y: -5.34999}
-  - {x: 9.491784, y: -0.0000009536743}
+  - {x: 9.677399, y: -5.3731008}
+  - {x: 9.630446, y: -0.60087276}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -310,7 +312,7 @@ Transform:
   m_GameObject: {fileID: 232313291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.99, y: 2.97, z: 0.05003808}
+  m_LocalPosition: {x: -4.76, y: 4.18, z: 0.05003808}
   m_LocalScale: {x: 0.61, y: 0.61, z: 0.61}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -600,7 +602,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.43, y: 0.02, z: -10}
+  m_LocalPosition: {x: -1.45, y: -0.34999996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -721,6 +723,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 178276682}
   - {fileID: 745123597}
   - {fileID: 1457772951}
   - {fileID: 416226789}
@@ -844,7 +847,7 @@ Transform:
   m_GameObject: {fileID: 1030878819}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.9449835, y: 2.592348, z: 0.022520777}
+  m_LocalPosition: {x: -5.98, y: 3.33, z: 0.022520777}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -909,7 +912,7 @@ Transform:
   m_GameObject: {fileID: 1128169372}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: 2.96, z: 0.022520777}
+  m_LocalPosition: {x: -5.01, y: 1.27, z: 0.022520777}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1318,8 +1321,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vitesseXMax: 7
   vitesseSaut: 5
-  alienCollision: 0
   sonDiamants: {fileID: 8300000, guid: 9a6b1e0c82ddcd148ac749976c0065a4, type: 3}
+  alienBlesser: 0
+  alienMort: 0
+  alienCollision: 0
 --- !u!82 &1476509017
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1428,6 +1433,7 @@ GameObject:
   - component: {fileID: 1660056451}
   - component: {fileID: 1660056453}
   - component: {fileID: 1660056452}
+  - component: {fileID: 1660056454}
   m_Layer: 0
   m_Name: Ennemi
   m_TagString: Untagged
@@ -1444,7 +1450,7 @@ Transform:
   m_GameObject: {fileID: 1660056450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.96, y: 1.71, z: 0.034458626}
+  m_LocalPosition: {x: -6.67, y: 2.92, z: 0.034458626}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1526,6 +1532,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1660056454
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660056450}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.125, y: 2.01}
+  m_Direction: 0
 --- !u!1 &1953258625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,7 +1596,7 @@ Transform:
   m_GameObject: {fileID: 1953258625}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.1037254, y: -1.7406476, z: 0.05003808}
+  m_LocalPosition: {x: -5.69, y: -1.54, z: 0.05003808}
   m_LocalScale: {x: 0.61, y: 0.61, z: 0.61}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1698,7 +1741,7 @@ Transform:
   m_GameObject: {fileID: 2066976968}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.28, y: 0.28, z: 0.05003808}
+  m_LocalPosition: {x: 3.65, y: 0.83, z: 0.05003808}
   m_LocalScale: {x: 0.37, y: 0.37, z: 0.37}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1991,7 +2034,6 @@ EdgeCollider2D:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 178276682}
   - {fileID: 1476509013}
   - {fileID: 848873088}
   - {fileID: 164196540}

@@ -5,16 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class DeplacementsAlien : MonoBehaviour
 {
+    //VARIABLES
     float vitesseX;
     float vitesseY;
 
     public float vitesseXMax;
     public float vitesseSaut;
 
-    public bool alienCollision;
-    //bool pouvoirSaut = false;
-
+    //Sons
     public AudioClip sonDiamants;
+
+    //si Alien touche l'ennemi une fois
+    public bool alienBlesser = false;
+
+    //si Alien touche l'ennemi deux fois
+    public bool alienMort = false;
+
+
+    //si Alien a une collision avec un objet
+    public bool alienCollision = false;
 
     // Start is called before the first frame update
     void Start()
@@ -47,16 +56,17 @@ public class DeplacementsAlien : MonoBehaviour
         Physics2D.OverlapCircle(transform.position, 0.2f);
 
         // Saut
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && Physics2D.OverlapCircle(transform.position, 0.2f))
+        if (Input.GetKeyDown("up") && Physics2D.OverlapCircle(transform.position, 0.2f))
         {
             vitesseY = vitesseSaut;
-            GetComponent<Animator>().SetBool("saut", true);
             alienCollision = false;
+            GetComponent<Animator>().SetBool("saut", true);
+
         }
         else
-        {
-            vitesseY = GetComponent<Rigidbody2D>().velocity.y;  //vitesse actuelle verticale
-            GetComponent<Animator>().SetBool("saut", false);
+        {   //vitesse actuelle verticale
+            vitesseY = GetComponent<Rigidbody2D>().velocity.y;  
+
         }
 
         //Applique les vitesses en X et Y
@@ -85,9 +95,8 @@ public class DeplacementsAlien : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collisionsAlien)
     {
-        //Variable de collision est à vrai
-        alienCollision = true;
 
+        alienCollision = true;
 
         if (Physics2D.OverlapCircle(transform.position, 0.2f))
         {
@@ -95,12 +104,48 @@ public class DeplacementsAlien : MonoBehaviour
             GetComponent<Animator>().SetBool("saut", false);
         }
 
-        //Gems
+        //Collision Gems
         if (collisionsAlien.gameObject.name == "bouleBleu")
         { 
-            //pouvoirSaut = true;
+            //On detruie le gem
             Destroy(collisionsAlien.gameObject);
+            //On joue le son
             GetComponent<AudioSource>().PlayOneShot(sonDiamants);
         }
+        //Collision Ennemi
+        if (collisionsAlien.gameObject.name == "Ennemi")
+        {
+            //Si l'alien est pas blessé
+            if (!alienBlesser)
+            {
+                //Animation blessé
+                GetComponent<Animator>().SetBool("mal", true);
+                //Appel de la fonction qui le remet a repos
+                Invoke("AlienBlessee", 1f);
+
+            }
+            else
+            {
+                //Animation mort
+                GetComponent<Animator>().SetBool("mort", true);
+                //Variable mort est à vrai
+                alienMort = true;
+                //Appel de la fonction qui relance le jeu après un délai
+                Invoke("RelancerJeu", 2f);
+            }
+
+        }
+    }
+    //fonction qui relance le jeu après un délai
+    private void RelancerJeu()
+    {
+        SceneManager.LoadScene("Alien1");
+    }
+    // fonction de l'alien blessé
+    private void AlienBlessee()
+    {
+        alienBlesser = true;
+        GetComponent<Animator>().SetBool("mal", false);
+        GetComponent<Animator>().SetBool("repos", true);
     }
 }
