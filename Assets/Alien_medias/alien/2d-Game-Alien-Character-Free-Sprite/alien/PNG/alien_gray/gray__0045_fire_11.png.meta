@@ -161,12 +161,12 @@ TextureImporter:
       name: gray__0045_fire_11_0
       rect:
         serializedVersion: 2
-        x: 532
-        y: 2313
-        width: 7
-        height: 66
+        x: 0
+        y: 0
+        width: 539
+        height: 433
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,57 +179,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gray__0045_fire_11_1
-      rect:
-        serializedVersion: 2
-        x: 532
-        y: 2263
-        width: 7
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d966ddfd5c11c930800000000000000
-      internalID: 4161638720683272665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gray__0045_fire_11_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 536
-        height: 1291
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67dffc6e2278e24c0800000000000000
-      internalID: -4310359209375957642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: gray__0045_fire_11_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 257
-        width: 13
+        x: 394
+        y: 306
+        width: 6
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +203,12 @@ TextureImporter:
       name: gray__0045_fire_11_4
       rect:
         serializedVersion: 2
-        x: 359
-        y: 263
-        width: 22
-        height: 31
+        x: 300
+        y: 257
+        width: 13
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +224,12 @@ TextureImporter:
       name: gray__0045_fire_11_5
       rect:
         serializedVersion: 2
-        x: 438
-        y: 246
-        width: 17
-        height: 24
+        x: 359
+        y: 263
+        width: 22
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,12 +245,12 @@ TextureImporter:
       name: gray__0045_fire_11_6
       rect:
         serializedVersion: 2
-        x: 353
-        y: 237
-        width: 17
-        height: 19
+        x: 439
+        y: 246
+        width: 16
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,12 +266,12 @@ TextureImporter:
       name: gray__0045_fire_11_7
       rect:
         serializedVersion: 2
-        x: 455
-        y: 224
-        width: 12
-        height: 8
+        x: 353
+        y: 238
+        width: 17
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -329,12 +287,12 @@ TextureImporter:
       name: gray__0045_fire_11_8
       rect:
         serializedVersion: 2
-        x: 338
-        y: 213
-        width: 12
-        height: 7
+        x: 455
+        y: 224
+        width: 13
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -350,12 +308,12 @@ TextureImporter:
       name: gray__0045_fire_11_9
       rect:
         serializedVersion: 2
-        x: 316
-        y: 193
-        width: 28
-        height: 11
+        x: 337
+        y: 213
+        width: 13
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -371,12 +329,12 @@ TextureImporter:
       name: gray__0045_fire_11_10
       rect:
         serializedVersion: 2
-        x: 335
-        y: 139
-        width: 22
-        height: 16
+        x: 317
+        y: 193
+        width: 27
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,12 +350,12 @@ TextureImporter:
       name: gray__0045_fire_11_11
       rect:
         serializedVersion: 2
-        x: 468
-        y: 141
-        width: 19
-        height: 13
+        x: 335
+        y: 139
+        width: 22
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -413,12 +371,12 @@ TextureImporter:
       name: gray__0045_fire_11_12
       rect:
         serializedVersion: 2
-        x: 353
-        y: 108
-        width: 20
-        height: 24
+        x: 468
+        y: 141
+        width: 18
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -434,12 +392,12 @@ TextureImporter:
       name: gray__0045_fire_11_13
       rect:
         serializedVersion: 2
-        x: 423
-        y: 110
-        width: 14
-        height: 22
+        x: 353
+        y: 109
+        width: 20
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -455,12 +413,12 @@ TextureImporter:
       name: gray__0045_fire_11_14
       rect:
         serializedVersion: 2
-        x: 345
-        y: 69
-        width: 12
-        height: 16
+        x: 423
+        y: 110
+        width: 14
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -476,12 +434,12 @@ TextureImporter:
       name: gray__0045_fire_11_15
       rect:
         serializedVersion: 2
-        x: 411
-        y: 68
-        width: 8
-        height: 18
+        x: 344
+        y: 69
+        width: 13
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,10 +451,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: gray__0045_fire_11_16
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 68
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac7592956e47514aac03d2d1eee1f47
+      internalID: -1320694528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5d4e3862b844c8943a47f1ba9dff7e62
     internalID: 0
     vertices: []
     indices: 
@@ -512,6 +491,7 @@ TextureImporter:
       gray__0045_fire_11_13: 5680111234717798771
       gray__0045_fire_11_14: -7846075920387858599
       gray__0045_fire_11_15: 8992781832880590418
+      gray__0045_fire_11_16: -1320694528
       gray__0045_fire_11_2: -4310359209375957642
       gray__0045_fire_11_3: -8946288567538886244
       gray__0045_fire_11_4: 1058863130220907637

@@ -136,7 +136,7 @@ TextureImporter:
         width: 244
         height: 431
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,13 +152,13 @@ TextureImporter:
       name: gray__0043_fire_9_1
       rect:
         serializedVersion: 2
-        x: 362
-        y: 141
-        width: 92
-        height: 111
+        x: 343
+        y: 106
+        width: 111
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 11}
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -169,94 +169,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: gray__0043_fire_9_2
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 235
-        width: 14
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 782ff9f1f29b6fe90800000000000000
-      internalID: -6992197759400938873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gray__0043_fire_9_3
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 216
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fcf3b313c48327d0800000000000000
-      internalID: -2944363757986120463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gray__0043_fire_9_4
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 108
-        width: 16
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7aed3daae75b8000800000000000000
-      internalID: 39221687203261051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gray__0043_fire_9_5
-      rect:
-        serializedVersion: 2
-        x: 409
-        y: 117
-        width: 13
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea62904cf53a0e990800000000000000
-      internalID: -7358702159417235794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b219808afa27e4b4f97fe50eed0f8fdf
     internalID: 0
     vertices: []
     indices: 

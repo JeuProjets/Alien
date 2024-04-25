@@ -12,6 +12,8 @@ public class DeplacementsAlien : MonoBehaviour
     public float vitesseXMax;
     public float vitesseSaut;
 
+    //public float reculBlessee;
+
     //Sons
     public AudioClip sonDiamants;
 
@@ -56,7 +58,7 @@ public class DeplacementsAlien : MonoBehaviour
         Physics2D.OverlapCircle(transform.position, 0.2f);
 
         // Saut
-        if (Input.GetKeyDown("up") && Physics2D.OverlapCircle(transform.position, 0.2f))
+        if (Input.GetKeyDown("up") && Physics2D.OverlapCircle(transform.position, 0.2f) && alienCollision == true)
         {
             vitesseY = vitesseSaut;
             alienCollision = false;
@@ -73,7 +75,7 @@ public class DeplacementsAlien : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(vitesseX, vitesseY);
 
         //****Gestion des animaitons de course, de repos et de saut****
-        if (vitesseX > 0.2f || vitesseX < -0.5f)
+        if (vitesseX > 0.1f || vitesseX < -0.1f)
         {
             GetComponent<Animator>().SetBool("marche", true);
         }
@@ -120,6 +122,10 @@ public class DeplacementsAlien : MonoBehaviour
             {
                 //Animation blessé
                 GetComponent<Animator>().SetBool("mal", true);
+
+                //Effet de saut recul
+                GetComponent<Rigidbody2D>().velocity = new Vector2(10,4);
+
                 //Appel de la fonction qui le remet a repos
                 Invoke("AlienBlessee", 1f);
 
