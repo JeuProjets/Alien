@@ -23,7 +23,7 @@ public class DeplacementsAlien : MonoBehaviour
     //si Alien touche l'ennemi deux fois
     public bool alienMort = false;
 
-
+    bool peutAttaquer;
     //si Alien a une collision avec un objet
     public bool alienCollision = false;
 
@@ -113,6 +113,13 @@ public class DeplacementsAlien : MonoBehaviour
             Destroy(collisionsAlien.gameObject);
             //On joue le son
             GetComponent<AudioSource>().PlayOneShot(sonDiamants);
+
+            peutAttaquer = true;
+            if (Input.GetKeyDown(KeyCode.Space) && peutAttaquer)
+            {
+                GetComponent<Animator>().SetBool("attaque", true);
+            }
+            
         }
         //Collision Ennemi
         if (collisionsAlien.gameObject.name == "Ennemi")
