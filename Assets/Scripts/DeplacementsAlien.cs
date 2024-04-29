@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,10 @@ public class DeplacementsAlien : MonoBehaviour
     public float vitesseXMax;
     public float vitesseSaut;
 
+    public GameObject texteAttaque;
+    public GameObject projectileOriginal;
+    public GameObject projectileClone;
+
     //public float reculBlessee;
 
     //Sons
@@ -23,7 +28,7 @@ public class DeplacementsAlien : MonoBehaviour
     //si Alien touche l'ennemi deux fois
     public bool alienMort = false;
 
-    bool peutAttaquer;
+    public bool peutAttaquer;
     //si Alien a une collision avec un objet
     public bool alienCollision = false;
 
@@ -74,6 +79,15 @@ public class DeplacementsAlien : MonoBehaviour
         //Applique les vitesses en X et Y
         GetComponent<Rigidbody2D>().velocity = new Vector2(vitesseX, vitesseY);
 
+        //Attaque
+        if (Input.GetKeyDown(KeyCode.Space) && peutAttaquer)
+        {
+            GetComponent<Animator>().SetBool("attaque", true);
+            Invoke("TireBalle", 0.8f);
+            Invoke("ArretAttaque", 1f);
+            texteAttaque.SetActive(false);  
+        }
+
         //****Gestion des animaitons de course, de repos et de saut****
         if (vitesseX > 0.1f || vitesseX < -0.1f)
         {
@@ -115,11 +129,9 @@ public class DeplacementsAlien : MonoBehaviour
             GetComponent<AudioSource>().PlayOneShot(sonDiamants);
 
             peutAttaquer = true;
-            if (Input.GetKeyDown(KeyCode.Space) && peutAttaquer)
-            {
-                GetComponent<Animator>().SetBool("attaque", true);
-            }
-            
+
+            //Activer le texte dans l'inspector
+            texteAttaque.SetActive(true);
         }
         //Collision Ennemi
         if (collisionsAlien.gameObject.name == "Ennemi")
@@ -160,5 +172,31 @@ public class DeplacementsAlien : MonoBehaviour
         alienBlesser = true;
         GetComponent<Animator>().SetBool("mal", false);
         GetComponent<Animator>().SetBool("repos", true);
+    }
+    private void TireBalle()
+    {
+
+        GetComponent<Animator>().SetBool("projectile", true);
+        //On instancie une balle
+        projectileClone = Instantiate(projectileOriginal);
+
+        //Rend active
+        projectileClone.SetActive(true);
+
+
+        if (GetComponent<SpriteRenderer>().flipX)
+        {
+            projectileClone.transform.position = transform.position + new Vector3(-1f, 0);
+            projectileClone.GetComponent<Rigidbody2D>().velocity = new Vector2(-10, 0);
+        }
+        else
+        {
+            projectileClone.transform.position = transform.position + new Vector3(1f, 0);
+            projectileClone.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
+        }
+    }
+    private void ArretAttaque()
+    {
+        GetComponent<Animator>().SetBool("attaque", false);
     }
 }

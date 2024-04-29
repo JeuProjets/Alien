@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: a53258f410c47004f8aab7b682e6b8a5
+guid: a59d5880db5831049b2ee104a5217bf2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6885077357354233753
-    second: gray__0043_fire_9_0
-  - first:
-      213: 5651638104200982015
-    second: gray__0043_fire_9_1
-  - first:
-      213: -6992197759400938873
-    second: gray__0043_fire_9_2
-  - first:
-      213: -2944363757986120463
-    second: gray__0043_fire_9_3
-  - first:
-      213: 39221687203261051
-    second: gray__0043_fire_9_4
-  - first:
-      213: -7358702159417235794
-    second: gray__0043_fire_9_5
+      213: -203199591819836810
+    second: echelleGlace_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,39 +96,26 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gray__0043_fire_9_1
+      name: echelleGlace_0
       rect:
         serializedVersion: 2
-        x: 343
-        y: 99
-        width: 111
-        height: 166
+        x: 0
+        y: 0
+        width: 185
+        height: 557
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffd26ff79e6ae6e40800000000000000
-      internalID: 5651638104200982015
+      spriteID: 672031f3c071e2df0800000000000000
+      internalID: -203199591819836810
       vertices: []
       indices: 
       edges: []
@@ -151,20 +123,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b219808afa27e4b4f97fe50eed0f8fdf
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      gray__0043_fire_9_0: -6885077357354233753
-      gray__0043_fire_9_1: 5651638104200982015
-      gray__0043_fire_9_2: -6992197759400938873
-      gray__0043_fire_9_3: -2944363757986120463
-      gray__0043_fire_9_4: 39221687203261051
-      gray__0043_fire_9_5: -7358702159417235794
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
