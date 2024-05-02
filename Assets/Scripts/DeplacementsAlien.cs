@@ -32,6 +32,8 @@ public class DeplacementsAlien : MonoBehaviour
     //si Alien a une collision avec un objet
     public bool alienCollision = false;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -122,7 +124,7 @@ public class DeplacementsAlien : MonoBehaviour
 
         //Collision Gems
         if (collisionsAlien.gameObject.name == "bouleBleu")
-        { 
+        {
             //On detruie le gem
             Destroy(collisionsAlien.gameObject);
             //On joue le son
