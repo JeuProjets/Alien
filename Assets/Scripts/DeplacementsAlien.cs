@@ -17,6 +17,7 @@ public class DeplacementsAlien : MonoBehaviour
     public GameObject projectileOriginal;
     public GameObject projectileClone;
 
+
     //public float reculBlessee;
 
     //Sons
@@ -31,6 +32,7 @@ public class DeplacementsAlien : MonoBehaviour
     public bool peutAttaquer;
     //si Alien a une collision avec un objet
     public bool alienCollision = false;
+
 
 
 
@@ -123,20 +125,46 @@ public class DeplacementsAlien : MonoBehaviour
         }
 
         //Collision Gems
-        if (collisionsAlien.gameObject.name == "bouleBleu")
+        if (collisionsAlien.gameObject.tag == "boule")
         {
+            if (collisionsAlien.gameObject.name == "bouleRouge")
+            {
+                //Couleur de l'alien en rouge
+                GetComponent<SpriteRenderer>().color = new Color(0.990566f, 0.6273868f, 0.6120951f, 1f);
+
+                //Mettre la variable qui lui permet d'attaquer à true
+                peutAttaquer = true;
+
+                //Activer le texte dans l'inspector
+                texteAttaque.SetActive(true);
+            }
+            
+            if (collisionsAlien.gameObject.name == "bouleBleu")
+            {
+                GetComponent<SpriteRenderer>().color = new Color(0.6839622f, 0.7172294f, 1f, 1f);
+                // Augmenter la vitesse
+                vitesseXMax *= 1.3f;
+                vitesseSaut *= 0.5f;
+                
+            }
+                
             //On detruie le gem
             Destroy(collisionsAlien.gameObject);
             //On joue le son
             GetComponent<AudioSource>().PlayOneShot(sonDiamants);
-
-            peutAttaquer = true;
-
-            //Activer le texte dans l'inspector
-            texteAttaque.SetActive(true);
+ 
         }
-        //Collision Ennemi
-        if (collisionsAlien.gameObject.name == "Ennemi")
+        //Plateforme: lorsque le personnage est sur la plateforme, il est enfant de celle-ci
+        //Tutoriel regardé pour l'information: https://www.youtube.com/watch?v=DQYj8Wgw3O0
+        if (collisionsAlien.gameObject.name == "plateformeBouge")
+        {
+            this.transform.parent = collisionsAlien.transform;
+        }
+
+
+
+            //Collision Ennemi
+            if (collisionsAlien.gameObject.name == "Ennemi")
         {
             //Si l'alien est pas blessé
             if (!alienBlesser)
@@ -163,6 +191,15 @@ public class DeplacementsAlien : MonoBehaviour
 
         }
     }
+
+    //Plateforme: lorsque le personnage sort de la plateforme, il n'est plus enfant de celle-ci
+    void OnCollisionExit2D(Collision2D collisionsAlien)
+    {
+        if (collisionsAlien.gameObject.name == "plateformeBouge")
+        {
+            this.transform.parent = null;
+        }
+    }
     //fonction qui relance le jeu après un délai
     private void RelancerJeu()
     {
@@ -179,6 +216,8 @@ public class DeplacementsAlien : MonoBehaviour
     {
 
         GetComponent<Animator>().SetBool("projectile", true);
+
+
         //On instancie une balle
         projectileClone = Instantiate(projectileOriginal);
 
@@ -189,7 +228,7 @@ public class DeplacementsAlien : MonoBehaviour
         if (GetComponent<SpriteRenderer>().flipX)
         {
             projectileClone.transform.position = transform.position + new Vector3(-1f, 0);
-            projectileClone.GetComponent<Rigidbody2D>().velocity = new Vector2(-10, 0);
+            projectileClone.GetComponent<Rigidbody2D>().velocity = new Vector2(-10, 3);
         }
         else
         {

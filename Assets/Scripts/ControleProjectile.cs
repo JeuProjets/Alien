@@ -18,13 +18,13 @@ public class ControleProjectile : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collisionsProjectile)
     {
-        //Collision de la balle avec l'abeille
+        //Collision de la balle avec l'ennemi
         if (collisionsProjectile.gameObject.name == "Ennemi")
         {
             //On detruie l'ennemi
             Destroy(collisionsProjectile.gameObject, 0.4f);
         }
-        //On d�truie la balle
-        Destroy(gameObject, 0.15f);
+        //On détruie le projectile
+        Destroy(gameObject, 3f);
     }
 }
