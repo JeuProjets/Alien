@@ -17,6 +17,7 @@ public class DeplacementsAlien : MonoBehaviour
     public GameObject projectileOriginal;
     public GameObject projectileClone;
 
+    public GameObject penteNeige;
 
     //public float reculBlessee;
 
@@ -33,7 +34,7 @@ public class DeplacementsAlien : MonoBehaviour
     //si Alien a une collision avec un objet
     public bool alienCollision = false;
 
-
+  
 
 
     // Start is called before the first frame update
@@ -144,14 +145,19 @@ public class DeplacementsAlien : MonoBehaviour
                 GetComponent<SpriteRenderer>().color = new Color(0.6839622f, 0.7172294f, 1f, 1f);
                 // Augmenter la vitesse
                 vitesseXMax *= 1.3f;
-                vitesseSaut *= 0.5f;
+                vitesseSaut *= 1.4f;
                 
+                SurfaceEffector2D effector = penteNeige.GetComponent<SurfaceEffector2D>();
+                effector.speed *= -1f;
+
+
             }
                 
             //On detruie le gem
             Destroy(collisionsAlien.gameObject);
             //On joue le son
             GetComponent<AudioSource>().PlayOneShot(sonDiamants);
+
  
         }
         //Plateforme: lorsque le personnage est sur la plateforme, il est enfant de celle-ci
@@ -163,8 +169,8 @@ public class DeplacementsAlien : MonoBehaviour
 
 
 
-            //Collision Ennemi
-            if (collisionsAlien.gameObject.name == "Ennemi")
+        //Collision Ennemi
+        if (collisionsAlien.gameObject.name == "Ennemi")
         {
             //Si l'alien est pas blessé
             if (!alienBlesser)
@@ -190,6 +196,16 @@ public class DeplacementsAlien : MonoBehaviour
             }
 
         }
+
+        if (collisionsAlien.gameObject.name == "Vaisseau")
+        {
+            Invoke("finGagne", 2f);
+            GetComponent<SpriteRenderer>().sortingOrder = 4;
+
+        }
+
+
+
     }
 
     //Plateforme: lorsque le personnage sort de la plateforme, il n'est plus enfant de celle-ci
@@ -204,6 +220,11 @@ public class DeplacementsAlien : MonoBehaviour
     private void RelancerJeu()
     {
         SceneManager.LoadScene("Alien1");
+    }
+
+    private void finGagne()
+    {
+        SceneManager.LoadScene("finGagne");
     }
     // fonction de l'alien blessé
     private void AlienBlessee()
