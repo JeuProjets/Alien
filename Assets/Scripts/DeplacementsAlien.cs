@@ -192,7 +192,7 @@ public class DeplacementsAlien : MonoBehaviour
                 //Variable mort est à vrai
                 alienMort = true;
                 //Appel de la fonction qui relance le jeu après un délai
-                Invoke("RelancerJeu", 2f);
+                Invoke("finPerdu", 2f);
             }
 
         }
@@ -216,15 +216,14 @@ public class DeplacementsAlien : MonoBehaviour
             this.transform.parent = null;
         }
     }
-    //fonction qui relance le jeu après un délai
-    private void RelancerJeu()
-    {
-        SceneManager.LoadScene("Alien1");
-    }
 
     private void finGagne()
     {
         SceneManager.LoadScene("finGagne");
+    }
+    private void finPerdu()
+    {
+        SceneManager.LoadScene("finPerdu");
     }
     // fonction de l'alien blessé
     private void AlienBlessee()
