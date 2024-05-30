@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/finGagne.unity
     guid: c1e6a4a3e0c178f44bb3c7ad9e96ac5f
+  - enabled: 1
+    path: Assets/Scenes/finPerdu.unity
+    guid: 98364f40cfa082846b524ab0c8fb1202
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

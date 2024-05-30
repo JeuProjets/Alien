@@ -19,6 +19,7 @@ public class DeplacementsAlien : MonoBehaviour
 
     public GameObject penteNeige;
 
+
     //public float reculBlessee;
 
     //Sons
@@ -40,7 +41,7 @@ public class DeplacementsAlien : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        texteAttaque.SetActive(false);
         
     }
 
@@ -73,7 +74,8 @@ public class DeplacementsAlien : MonoBehaviour
             vitesseY = vitesseSaut;
             alienCollision = false;
             GetComponent<Animator>().SetBool("saut", true);
-
+            //Il peut plus attaquer
+            peutAttaquer = false;
         }
         else
         {   //vitesse actuelle verticale
@@ -111,6 +113,7 @@ public class DeplacementsAlien : MonoBehaviour
         if (alienCollision == true)
         {
             GetComponent<Animator>().SetBool("saut", false);
+            peutAttaquer = true;
         }
     }
 
@@ -146,9 +149,13 @@ public class DeplacementsAlien : MonoBehaviour
                 // Augmenter la vitesse
                 vitesseXMax *= 1.3f;
                 vitesseSaut *= 1.4f;
-                
+
+                // Il peut monter la pente
                 SurfaceEffector2D effector = penteNeige.GetComponent<SurfaceEffector2D>();
                 effector.speed *= -1f;
+
+                //Il peut plus attaquer
+                peutAttaquer = false;
 
 
             }
@@ -197,9 +204,11 @@ public class DeplacementsAlien : MonoBehaviour
 
         }
 
+        //Si il se rend au vaisseau, on met la scene de victoire
         if (collisionsAlien.gameObject.name == "Vaisseau")
         {
             Invoke("finGagne", 2f);
+            //On le place en dessous du vaisseau
             GetComponent<SpriteRenderer>().sortingOrder = 4;
 
         }
@@ -216,7 +225,7 @@ public class DeplacementsAlien : MonoBehaviour
             this.transform.parent = null;
         }
     }
-
+    //Gestion Scenes
     private void finGagne()
     {
         SceneManager.LoadScene("finGagne");
@@ -256,6 +265,7 @@ public class DeplacementsAlien : MonoBehaviour
             projectileClone.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
         }
     }
+    //Gestion Attaque
     private void ArretAttaque()
     {
         GetComponent<Animator>().SetBool("attaque", false);
